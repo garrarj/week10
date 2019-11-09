@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles/default.css" rel="stylesheet">
+    <link href="styles/transitions.css" rel="stylesheet">
+    <link href="styles/transform.css" rel="stylesheet">
+    <link href="styles/animations.css" rel="stylesheet">
+    <title>MAD9013 - Week 10</title>
+</head>
+<body>
+     <!--
+        This week we will discussing:
+        - CSS transitions
+        - CSS transformations
+        - CSS animations
+        - Lottie
+    -->
+
+    <header>
+        <h1>Mad9013 Week 10 content</h1>
+        <nav>
+            <a class="nav-links" href="#">Link</a>
+            <a class="nav-links" href="#">Link</a>
+            <a class="nav-links" href="#">Link</a>
+            <a class="nav-links" href="#">Link</a>
+            <a class="mobile-nav-link" href="#">&#9776;</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>CSS Transitions</h2>
+            <p>Transitions allows you change property values smoothly, rather than instantaneously. It is important to remember that you cannot change between binary values, like between <code>display: block;</code> and <code>display: none;</code>, because there are not interim values between those two states. However, if there are values between the two states you wish to transition between, like between <code>font-size: 10px;</code> and <code>font-size: 24px;</code>, then CSS transitions can be applied.</p>
+            <div class="transition-container">
+                <div class="hover-box">Hover over me</div>
+                <a class="click-box">Click on me</a>
+                <div class="input-container">
+                    <label for="input-maximus">Typety type</label>
+                    <input type="text" id="input-maximus" name="input-maximus" pattern="[A-Za-z]{7}" placeholder="Seven letters only" required>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>CSS 2D Transformations</h2>
+            <p>The CSS transform property allows you to modify the position and geometric appearance of an element.</p>
+            <div class="transform-container">
+                <div class="rotate-box"></div>
+                <div class="skew-box"></div>
+                <div class="scale-box"></div>
+                <div class="translate-box"></div>
+                <p>Make me Visible</p>
+                <div class="reveal-box">Move me</div>
+            </div>
+        </section>
+        <section>
+            <h2>CSS Animations</h2>
+            <p>Animations require a <code>@keyframes</code> name with the steps of the animation defined</p>
+            <p>Then the element to be animated will reference the <code>@keyframes</code> name.</p>
+            <p>The element uses an <code>animation</code> property that can set the values for <code>duration</code>, <code>timing-function</code>, <code>delay</code>, <code>iteration-count</code>, <code>direction</code>,<code>play-state</code>, and <code>name</code></p>
+            <div class="anim-container">
+                <div class="anim-box">&#1422;</div>
+            </div>
+        </section>
+        <section>
+            <h2>Lottie</h2>
+            <p>Developed by AirBNB, Lottie is a library that parses After Effects animations into json objects which can then be render natively on mobile platforms and the web. It's awesome.</p>
+            <ul>
+                <li><a href="https://airbnb.io/lottie/#/web">Lottie documentation</a></li>
+                <li><a href="https://lottiefiles.com/">Lottie Files</a> is a site that has many free Lottie animations that you can use in your projects.</li>
+            </ul>
+            <p>Lottie requires a few elements to function, but it's all fairly simple:</p>
+            <ol>
+                <li>An animation exported as a json object - In this week's example I have created an animation and saved it in the 'data' folder</li>
+                <li>The lottie player - this can be loaded in your project files (as I have done here), or you can <a href="https://cdnjs.com/#q=lottie-web">link to a CDN</a></li>
+                <li>A simple javascript function that defines which HTML element will hold the animation, how the animation is rendered, whether it autoplays, etc. </li>
+                <li>Hosting space - the json data will not be loaded if you try to run your website locally. In order to test and use this tool, you will need to upload your code to Github Pages (or other hosting service)</li>
+            </ol>
+            <div id="lottie"></div>
+        </section>
+    </main>
+    <div class="footer-container">
+        <footer>
+            <nav>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </nav>
+            <p>Copyright 2019</p>
+        </footer>
+    </div>
+    <!-- Scripts -->
+
+</body>
+</html>

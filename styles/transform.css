@@ -1,0 +1,73 @@
+/*
+The CSS transform property allows you to modify the position and geometric appearance of an element.
+
+Various ways you can transform an element:
+- rotate(30deg | 5.6turns | 3.14rad ) 
+- translate(100px, -400px)  translateX() translateY()
+- scale(2)  scaleX()  scaleY()
+- skewX() skewY()
+
+X-axis = horizontal axis
+Y-axis = vertical axis
+*/
+
+.transform-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.transform-container>div{
+    margin: 50px;
+    width: 150px;
+    height: 75px;
+    transition: transform 250ms ease;
+}
+
+.rotate-box{
+    background-color: var(--deSatPurple);
+}
+
+.rotate-box:hover{
+    
+}
+
+.skew-box{
+    background-color: var(--deSatOrange);
+}
+.skew-box:hover{
+    
+}
+
+.scale-box{
+    background-color: var(--deSatTeal);
+}
+.scale-box:hover{
+    
+}
+
+.translate-box{
+    background-color: var(--deSatRed);
+}
+
+.translate-box:hover{
+    
+}
+
+/*
+----- Practice task ------
+There is some text behind the 'reveal-box'. Use a transition, a transform, and a hover event to allows users to reveal the text. 
+
+*/
+
+.reveal-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--w);
+    position: relative;
+    top: -100px;
+    background-color: var(--deSatBlue);
+}
+

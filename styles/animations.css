@@ -1,0 +1,47 @@
+/*
+CSS animations properties:
+
+animation-name: skywalker; -------------- A unique name that connects your animation to @keyframes
+animation-duration: 1.5s; --------------- How long will the animation be?
+animation-timing-function:linear; ------- What kind of speed curve the animation follow?
+animation-delay: 0; --------------------- How long will the delay be before your animation begins?
+animation-iteration-count: 12; ---------- How many loops will your animation have?
+animation-direction:       ; ------------ Will your animation play from beginning to end? From end to beginning?
+                   : normal; ---------------- Animation plays from beginning to end
+                   : reverse; --------------- Animation plays from end to beginning
+                   : alternate; ------------- Animation plays from beginning to end THEN from end to beginning
+                   : alternate-reverse; ----- Animation plays from end to beginning THEN from beginning to end
+animation-play-state: running; ---------- Allows to play and pause your animation on mouse events
+*/
+
+.anim-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.anim-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--blue);
+    border: 5px solid var(--deSatPurple);
+    color: var(--w);
+    font-size: 30px;
+}
+
+.anim-box:hover{
+    
+}
+
+
+
+/* 
+----- Practice task ------
+Create your own animation and set of keyframes that will cause the footer of this page to go off screen, change background colour, then return to its original position. Have this animation occur over a two second period of time with no delay and have it repeat infinitely.
+*/
+
+

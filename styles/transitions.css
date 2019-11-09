@@ -1,0 +1,105 @@
+/* 
+A CSS transition includes several values: property to change, duration for the change, timing function, and a delay before starting
+
+---
+transition properties:
+
+transition-property: all or specific property name
+transition-duration: 1s  or 1000ms
+transition-timing-function: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier()  
+transition-delay: 0.5s 
+
+---
+transition properties shorthand:
+
+transition: [property name] [duration] [easing] [delay]
+
+--- 
+speed curves:
+
+linear -------------- no curve, consistent transition
+ease ---------------- fast then slow then fast
+ease-in-out --------- slow then fast then slow
+ease-in ------------- slow then fast
+ease-out ------------ fast then slow
+cubic-bezier -------- custom values
+
+https://cubic-bezier.com/
+
+*/
+
+.transition-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+/* Hover box styling */
+.hover-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 50vw;
+    height: 10vh;
+    margin: 20px;
+    background-color: var( --deSatBlue);
+    color: var(--w);
+    font-size: 1.2em;
+    
+}
+
+.hover-box:hover{
+    
+}
+
+/* Click box styling */
+.click-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 20vw;
+    height: 10vh;
+    margin: 20px;
+    background-color: var( --deSatGreen);
+    color: var(--w);
+    font-size: 1.2em;
+    
+}
+
+.click-box:active{
+    
+}
+
+/*
+----- Practice task ------
+
+    1. Add a transition property to the text input element inside 'input-container'. The transition must apply the following:
+        a. It must target the 'background-color' and 'border' properties (Do not use 'all' to achieve this)
+        b. Using milliseconds, set the transition duration to half a second
+        c. Give a different custom cubic-bezier timing function to each property transition (one curve for 'background-color' and another for 'border')
+        d. Using milliseconds, set a delay of one second on the 'background-color' property (the 'border' property should have no delay) 
+
+    2. Using the colour variables listed below (which are already declared in default.css), set the background-color and border colour to change when the user interacts with the input
+        a. (background-color) --deSatBlue15
+        b. (border) --deSatBlue
+
+    2. Using the colour variables listed below, set the background-color and border colour to change when the user's input is valid
+        a. (background-color) --deSatGreen15
+        b. (border) --deSatGreen
+
+*/
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.input-container>input{
+    padding: 10px 100px 10px 10px;
+    border: 2px solid var(--deSatOrange);
+}
