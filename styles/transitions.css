@@ -1,16 +1,25 @@
 /* 
 A CSS transition includes several values: property to change, duration for the change, timing function, and a delay before starting
 
+--- 
+Some CSS properties CANNOT be animated. These properties often use state-based values meaning they have not interim values that can be used for animation. For example:
+
+`display: none;` cannot be transitioned into `display: block;` because there are no mid-points between `none` and `block`
+
+However
+
+`font-size: 24px;` can be transitioned into `font-size: 36px` because there ten mid-points between `24px` and `36px`
+
 ---
 transition properties:
 
 transition-property: all or specific property name
 transition-duration: 1s  or 1000ms
-transition-timing-function: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier()  
-transition-delay: 0.5s 
+transition-timing-function: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier()  
+transition-delay: 0.5s or 500ms
 
 ---
-transition properties shorthand:
+transition shorthand:
 
 transition: [property name] [duration] [easing] [delay]
 
@@ -28,6 +37,7 @@ https://cubic-bezier.com/
 
 */
 
+/* Some basic styles to center this section's content */
 .transition-container{
     display: flex;
     flex-direction: column;
@@ -40,7 +50,7 @@ https://cubic-bezier.com/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    cursor: pointer;
+    cursor: pointer; /* You can define what type of cursor a user will see when they interact with an elements. 'pointer' is the hand shaped cursor. */
     width: 50vw;
     height: 10vh;
     margin: 20px;
@@ -60,13 +70,14 @@ https://cubic-bezier.com/
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer; 
     width: 20vw;
     height: 10vh;
     margin: 20px;
     background-color: var( --deSatGreen);
     color: var(--w);
     font-size: 1.2em;
+    letter-spacing: 0em; /* letter-spacing adjusts the kerning of text (the spacing between each character) */
     
 }
 

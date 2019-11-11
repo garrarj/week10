@@ -1,17 +1,23 @@
 /*
 CSS animations properties:
 
-animation-name: skywalker; -------------- A unique name that connects your animation to @keyframes
-animation-duration: 1.5s; --------------- How long will the animation be?
-animation-timing-function:linear; ------- What kind of speed curve the animation follow?
-animation-delay: 0; --------------------- How long will the delay be before your animation begins?
-animation-iteration-count: 12; ---------- How many loops will your animation have?
+animation-name: ; ----------------------- A unique name that connects your animation to @keyframes
+animation-duration: ; ------------------- How long will the animation be?
+animation-timing-function: ; ------------ What kind of speed curve the animation follow?
+animation-delay: ; ---------------------- How long will the delay be before your animation begins?
+animation-iteration-count: ; ------------ How many loops will your animation have?
 animation-direction:       ; ------------ Will your animation play from beginning to end? From end to beginning?
                    : normal; ---------------- Animation plays from beginning to end
                    : reverse; --------------- Animation plays from end to beginning
                    : alternate; ------------- Animation plays from beginning to end THEN from end to beginning
                    : alternate-reverse; ----- Animation plays from end to beginning THEN from beginning to end
 animation-play-state: running; ---------- Allows to play and pause your animation on mouse events
+
+--- 
+
+animation shorthand: 
+
+animation: [duration] [timing-function] [delay] [iteration-count] [direction] [play-state] [name]
 */
 
 .anim-container{
@@ -42,6 +48,7 @@ animation-play-state: running; ---------- Allows to play and pause your animatio
 /* 
 ----- Practice task ------
 Create your own animation and set of keyframes that will cause the footer of this page to go off screen, change background colour, then return to its original position. Have this animation occur over a two second period of time with no delay and have it repeat infinitely.
+
 */
 
 

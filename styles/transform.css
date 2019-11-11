@@ -2,10 +2,10 @@
 The CSS transform property allows you to modify the position and geometric appearance of an element.
 
 Various ways you can transform an element:
-- rotate(30deg | 5.6turns | 3.14rad ) 
+- rotate(30deg | 5.6turns | 3.14rad ) --- 180deg is equal to 3.14rad
 - translate(100px, -400px)  translateX() translateY()
 - scale(2)  scaleX()  scaleY()
-- skewX() skewY()
+- skew() skewX() skewY() --- skew() and skewX() are the same
 
 X-axis = horizontal axis
 Y-axis = vertical axis
