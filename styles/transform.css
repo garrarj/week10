@@ -30,6 +30,7 @@ Y-axis = vertical axis
 }
 
 .rotate-box:hover{
+    transform: rotate(3turn);
     
 }
 
@@ -37,6 +38,7 @@ Y-axis = vertical axis
     background-color: var(--deSatOrange);
 }
 .skew-box:hover{
+    transform: skewY(35deg);
     
 }
 
@@ -44,7 +46,7 @@ Y-axis = vertical axis
     background-color: var(--deSatTeal);
 }
 .scale-box:hover{
-    
+    transform: scale(1.2);
 }
 
 .translate-box{
@@ -52,7 +54,7 @@ Y-axis = vertical axis
 }
 
 .translate-box:hover{
-    
+    transform: translateY(-100px);
 }
 
 /*
@@ -71,3 +73,5 @@ There is some text behind the 'reveal-box'. Use a transition, a transform, and a
     background-color: var(--deSatBlue);
 }
 
+.reveal-box:hover{
+}

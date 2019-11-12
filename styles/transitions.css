@@ -14,7 +14,7 @@ However
 transition properties:
 
 transition-property: all or specific property name
-transition-duration: 1s  or 1000ms
+transition-duration: 0.25s  or 250ms
 transition-timing-function: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier()  
 transition-delay: 0.5s or 500ms
 
@@ -57,11 +57,13 @@ https://cubic-bezier.com/
     background-color: var( --deSatBlue);
     color: var(--w);
     font-size: 1.2em;
-    
+    transition-property: background-color;
+    transition
+    /* transition: background-color 0.5s cubic-bezier(.03,.88,.75,.1); */
 }
 
 .hover-box:hover{
-    
+    background-color: var(--deSatRed);
 }
 
 /* Click box styling */
@@ -78,11 +80,12 @@ https://cubic-bezier.com/
     color: var(--w);
     font-size: 1.2em;
     letter-spacing: 0em; /* letter-spacing adjusts the kerning of text (the spacing between each character) */
-    
+    transition: width 250ms ease, letter-spacing 750ms ease-out;
 }
 
 .click-box:active{
-    
+    width: 35vw;
+    letter-spacing: 0.2em;
 }
 
 /*
@@ -113,4 +116,5 @@ https://cubic-bezier.com/
 .input-container>input{
     padding: 10px 100px 10px 10px;
     border: 2px solid var(--deSatOrange);
+
 }

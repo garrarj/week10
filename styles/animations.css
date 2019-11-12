@@ -5,7 +5,7 @@ animation-name: ; ----------------------- A unique name that connects your anima
 animation-duration: ; ------------------- How long will the animation be?
 animation-timing-function: ; ------------ What kind of speed curve the animation follow?
 animation-delay: ; ---------------------- How long will the delay be before your animation begins?
-animation-iteration-count: ; ------------ How many loops will your animation have?
+animation-iteration-count: infinite; ------------ How many loops will your animation have?
 animation-direction:       ; ------------ Will your animation play from beginning to end? From end to beginning?
                    : normal; ---------------- Animation plays from beginning to end
                    : reverse; --------------- Animation plays from end to beginning
@@ -37,12 +37,33 @@ animation: [duration] [timing-function] [delay] [iteration-count] [direction] [p
     border: 5px solid var(--deSatPurple);
     color: var(--w);
     font-size: 30px;
+
+    animation-name: Jackie-the-voluptuous;
+    animation-duration: 3000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 6;
+    animation-direction: normal;
+    animation-play-state: paused;
 }
 
 .anim-box:hover{
-    
+    animation-play-state: running;
 }
 
+@keyframes Jackie-the-voluptuous{
+    0%{
+        transform: rotate(0deg) scale(1);
+        background-color: var(--deSatPurple);
+    }
+    50%{
+        transform: rotate(180deg) scale(1.5);
+        background-color: var(--deSatRed);
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+        background-color: var(--deSatPurple);
+    }
+}
 
 
 /* 
@@ -50,5 +71,4 @@ animation: [duration] [timing-function] [delay] [iteration-count] [direction] [p
 Create your own animation and set of keyframes that will cause the footer of this page to go off screen, change background colour, then return to its original position. Have this animation occur over a two second period of time with no delay and have it repeat infinitely.
 
 */
-
 
