@@ -1,0 +1,48 @@
+.filter-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.filter-container>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 10vh;
+    color: var(--w);
+    background-color: var(--deSatPurple);
+}
+
+.filter-container>div:nth-child(1){
+    filter: brightness(); /* values = 0 to 1 */
+}
+.filter-container>div:nth-child(2){
+    filter: contrast(); /* values = 0 to 1 */
+}
+.filter-container>div:nth-child(3){
+    filter: grayscale(0); /* values = 0 to 1 */
+}
+.filter-container>div:nth-child(4){
+    filter: hue-rotate(); /* values = deg */
+}
+.filter-container>div:nth-child(5){
+    filter: saturate(); /* values = 0 to 1 */
+}
+.filter-container>div:nth-child(6){
+    filter: sepia(0); /* values = 0 to 1 */
+}
+.filter-container>div:nth-child(7){
+    filter: blur(); /* values = px */
+}
+.filter-container>div:nth-child(8){
+    filter: drop-shadow(); /* values = [left/right-px] [top/bottom-px] [blur-px] [color] */
+}
+.filter-container>div:nth-child(9){
+    filter: invert(0); /* values = 0 to 1 */
+}
+.filter-container>div:nth-child(10){
+    filter: opacity(); /* values = 0 to 1 */
+}
